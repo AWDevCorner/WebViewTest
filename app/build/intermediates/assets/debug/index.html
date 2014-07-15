@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width; user-scalable=0;" />
+<title>AndroidWorld.it</title>
+</head>
+<body>
+<h1>DevCorner Example</h1>
+<p id="testP" style="color:red">Rimpiazzami!</p>
+<input type="button" value="Mostra toast" onClick="showAndroidToast('AndroidWorld - DevCorner!')" />
+<input type="button" value="Apri dialog" onClick="openAndroidDialog()" />
+<br/>
+<script language="javascript">
+	function showAndroidToast(toast) {
+		AndroidFunction.showToast(toast);
+	}
+	
+	function openAndroidDialog() {
+		AndroidFunction.openAndroidDialog();
+	}
+
+  	function callFromActivity(msg){
+  		document.getElementById("testP").innerHTML = msg;
+  	}
+</script>
+
+</body>
+</html>
